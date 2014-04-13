@@ -1,5 +1,10 @@
 Revision History for Dancer2::Session::PSGI
 
+0.003     2014-04-13T20:30:18EST+1000
+  * Update test prerequisites:
+    Plack::Test >= 1.0029 for simplified OO interface
+    (Reported by @haarg)
+
 0.002     2014-04-01T06:36:07EST+1100
   * Revise test prerequisites.
 

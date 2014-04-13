@@ -34,12 +34,12 @@ my %WriteMakefileArgs = (
     "IPC::Open3" => 0,
     "Plack::Builder" => 0,
     "Plack::Middleware::Session" => 0,
-    "Plack::Test" => 0,
+    "Plack::Test" => "1.0029",
     "Test::More" => "0.96",
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.002",
+  "VERSION" => "0.003",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -57,7 +57,7 @@ my %FallbackPrereqs = (
   "Moo" => 0,
   "Plack::Builder" => 0,
   "Plack::Middleware::Session" => 0,
-  "Plack::Test" => 0,
+  "Plack::Test" => "1.0029",
   "Test::More" => "0.96",
   "strict" => 0,
   "warnings" => 0

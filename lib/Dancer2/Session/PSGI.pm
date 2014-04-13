@@ -5,7 +5,7 @@ package Dancer2::Session::PSGI;
 use Moo;
 with 'Dancer2::Core::Role::SessionFactory';
 
-our $VERSION = '0.002'; # VERSION
+our $VERSION = '0.003'; # VERSION
 
 #-----------------------------------------#
 # Alter SessionFactory attribute defaults
@@ -64,7 +64,7 @@ Dancer2::Session::PSGI - Dancer2 session storage via Plack::Middleware::Session
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
