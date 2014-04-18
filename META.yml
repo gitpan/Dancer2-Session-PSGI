@@ -9,9 +9,10 @@ build_requires:
   HTTP::Request::Common: 0
   IO::Handle: 0
   IPC::Open3: 0
+  Plack: 1.0029
   Plack::Builder: 0
   Plack::Middleware::Session: 0
-  Plack::Test: 1.0029
+  Plack::Test: 0
   Test::More: 0.96
   perl: 5.006
   strict: 0
@@ -33,4 +34,4 @@ requires:
 resources:
   bugtracker: https://github.com/veryrusty/dancer2-session-psgi/issues
   homepage: https://metacpan.org/release/Dancer2-Session-PSGI
-version: 0.003
+version: 0.004
