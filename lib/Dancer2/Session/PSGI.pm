@@ -5,7 +5,7 @@ package Dancer2::Session::PSGI;
 use Moo;
 with 'Dancer2::Core::Role::SessionFactory';
 
-our $VERSION = '0.004'; # VERSION
+our $VERSION = '0.005'; # VERSION
 
 #-----------------------------------------#
 # Alter SessionFactory attribute defaults
@@ -41,12 +41,19 @@ sub _sessions { return [] }
 #-----------------------------------------#
 
 # Middleware sets the cookie.
-# Set options.expire if cookie has expired, e.g. result of delete_session.
 sub set_cookie_header {
     my ( $self, %params ) = @_;
+
     my $session = $params{session};
-    if ( $session->expires && $session->expires < time ) {
-        $self->context->env->{'psgix.session.options'}{expire} = 1;
+    my $options = $self->context->env->{'psgix.session.options'};
+
+    if ( my $expires = $session->expires ) {
+        if ( $session->expires < time ) { # Cookie has expired.
+            $options->{expire} = 1;
+        }
+        else { # Pass upstream the cookie expire time
+            $options->{expires} = $expires;
+        }
     }
 }
 
@@ -64,7 +71,7 @@ Dancer2::Session::PSGI - Dancer2 session storage via Plack::Middleware::Session
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 

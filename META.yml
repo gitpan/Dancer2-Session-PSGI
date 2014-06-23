@@ -3,35 +3,36 @@ abstract: 'Dancer2 session storage via Plack::Middleware::Session'
 author:
   - 'Russell Jenkins <russellj@cpan.org>'
 build_requires:
-  Dancer2: 0.11
-  File::Spec: 0
-  HTTP::Cookies: 0
-  HTTP::Request::Common: 0
-  IO::Handle: 0
-  IPC::Open3: 0
-  Plack: 1.0029
-  Plack::Builder: 0
-  Plack::Middleware::Session: 0
-  Plack::Test: 0
-  Test::More: 0.96
-  perl: 5.006
-  strict: 0
-  warnings: 0
+  Dancer2: '0.11'
+  Dancer2::Core::Time: '0'
+  File::Spec: '0'
+  HTTP::Cookies: '0'
+  HTTP::Request::Common: '0'
+  IO::Handle: '0'
+  IPC::Open3: '0'
+  Plack: '1.0029'
+  Plack::Builder: '0'
+  Plack::Middleware::Session: '0'
+  Plack::Test: '0'
+  Test::More: '0.96'
+  perl: '5.006'
+  strict: '0'
+  warnings: '0'
 configure_requires:
-  ExtUtils::MakeMaker: 6.30
+  ExtUtils::MakeMaker: '6.30'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 5.012, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.140640'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: Dancer2-Session-PSGI
 requires:
-  Dancer2: 0.11
-  Dancer2::Core::Role::SessionFactory: 0
-  Moo: 0
-  perl: 5.006
+  Dancer2: '0.11'
+  Dancer2::Core::Role::SessionFactory: '0'
+  Moo: '0'
+  perl: '5.006'
 resources:
   bugtracker: https://github.com/veryrusty/dancer2-session-psgi/issues
   homepage: https://metacpan.org/release/Dancer2-Session-PSGI
-version: 0.004
+version: '0.005'
