@@ -63,8 +63,13 @@
       "bugtracker" : {
          "web" : "https://github.com/veryrusty/dancer2-session-psgi/issues"
       },
-      "homepage" : "https://metacpan.org/release/Dancer2-Session-PSGI"
+      "homepage" : "https://metacpan.org/release/Dancer2-Session-PSGI",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/veryrusty/dancer2-session-psgi.git",
+         "web" : "https://github.com/veryrusty/dancer2-session-psgi"
+      }
    },
-   "version" : "0.005"
+   "version" : "0.006"
 }
 

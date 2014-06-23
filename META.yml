@@ -35,4 +35,5 @@ requires:
 resources:
   bugtracker: https://github.com/veryrusty/dancer2-session-psgi/issues
   homepage: https://metacpan.org/release/Dancer2-Session-PSGI
-version: '0.005'
+  repository: git://github.com/veryrusty/dancer2-session-psgi.git
+version: '0.006'
