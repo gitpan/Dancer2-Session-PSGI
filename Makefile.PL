@@ -20,13 +20,12 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Dancer2::Session::PSGI",
   "PREREQ_PM" => {
-    "Dancer2" => "0.11",
+    "Dancer2" => "0.152000",
     "Dancer2::Core::Role::SessionFactory" => 0,
     "Moo" => 0
   },
   "TEST_REQUIRES" => {
-    "Dancer2" => "0.11",
-    "Dancer2::Core::Time" => 0,
+    "Dancer2" => "0.152000",
     "File::Spec" => 0,
     "HTTP::Cookies" => 0,
     "HTTP::Request::Common" => 0,
@@ -40,7 +39,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.006",
+  "VERSION" => "0.007",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -48,9 +47,8 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "Dancer2" => "0.11",
+  "Dancer2" => "0.152000",
   "Dancer2::Core::Role::SessionFactory" => 0,
-  "Dancer2::Core::Time" => 0,
   "File::Spec" => 0,
   "HTTP::Cookies" => 0,
   "HTTP::Request::Common" => 0,

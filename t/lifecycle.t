@@ -13,7 +13,6 @@ use HTTP::Cookies;
     # Force PSGI server for Dancer2
     BEGIN { $ENV{DANCER_APPHANDLER} = 'PSGI' }
     use Dancer2;
-    use Dancer2::Core::Time;
 
     setting( session => 'PSGI' );
 
@@ -27,14 +26,13 @@ use HTTP::Cookies;
     };
 
     get '/delete' => sub {
-        context->destroy_session;
+        app->destroy_session;
         return 'destroyed';
     };
 
     get '/expires' => sub {
-        my $session = session;
-        $session->expires(10);
-        return $session->expires;
+        session->expires(10);
+        return session->expires;
     };
 }
 
