@@ -11,16 +11,16 @@ build_requires:
   IPC::Open3: '0'
   Plack: '1.0029'
   Plack::Builder: '0'
-  Plack::Middleware::Session: '0'
+  Plack::Middleware::Session: '0.23'
   Plack::Test: '0'
   Test::More: '0.96'
   perl: '5.006'
   strict: '0'
   warnings: '0'
 configure_requires:
-  ExtUtils::MakeMaker: '6.30'
+  ExtUtils::MakeMaker: '0'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.140640'
+generated_by: 'Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.140640'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -35,4 +35,4 @@ resources:
   bugtracker: https://github.com/veryrusty/dancer2-session-psgi/issues
   homepage: https://metacpan.org/release/Dancer2-Session-PSGI
   repository: git://github.com/veryrusty/dancer2-session-psgi.git
-version: '0.007'
+version: '0.008'
